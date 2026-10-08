@@ -99,11 +99,12 @@ header {
 }
 
 .profile-container img { /* Profile picture inside the container */
-  width: 80%;  
-  height: 80%;
-  border-radius: 50%;
-  object-fit: cover;
- /*The width and height at 80% are in order to change the picture size inside the container without changing the container size. Previously the image would look pixelated as it was bigger than intended. */
+    width: 80%;  
+    height: 80%;
+    border-radius: 50%;
+    border: 6px solid black; /*little border on the picture */
+    object-fit: cover;
+    /*The width and height at 80% are in order to change the picture size inside the container without changing the container size. Previously the image would look pixelated as it was bigger than intended. */
 }
 
 .profile-text {
