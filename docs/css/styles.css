@@ -146,18 +146,12 @@ main section {
     /* sides are still 60px due inherance */
 }
 
-.education h3 {
+.education h3, .volunteer h3 {
   margin-block: 0.30em;
   margin-top: 0.8em;
 }
-.education p {  /* to reduce space between paragraphs, titles only in education */
+.education p, .volunteer p {  /* to reduce space between paragraphs, titles, only in education and volunteer sections */
   margin-block: 0.30em;
 }
 
-.volunteer h3 {
-  margin-block: 0.30em;
-  margin-top: 0.8em;
-}
-.volunteer p {  /* to reduce space between paragraphs, titles only in volunteer */
-  margin-block: 0.30em;
-}
+
