@@ -29,7 +29,8 @@
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
+  font-size: 3em;
 }
 
 
@@ -39,6 +40,16 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.courgette-regular-font3, h2 {  /* i am using this font for titles, etc. Ive added h2 so it affects all h2 headers. */
+  font-family: "Courgette", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2em;
+}
+
+
 
 .textlight {
   color: #9fd3c7;
@@ -57,7 +68,7 @@ body {
     width: 70%;
     box-sizing: border-box; 
     /*padding: 0 20px; changed it to main section so the color sections would go side to side of the body.*/
-    font-family: "Inter", "Raleway", Verdana, Geneva, sans-serif;
+    font-family: "Inter", Verdana, Geneva, sans-serif;
 }
 
 /* End of global styles */
@@ -99,6 +110,15 @@ header {
     box-sizing: border-box;
 }
 
+/*So my Name and the occupation have less spacing between them, as it was a lot at first once changing the fonts */
+.profile-text h1 {
+  margin: 0 0 0.15em;
+}
+
+.profile-text h2 {
+  margin-top: 0;
+}
+
 footer {
     padding: 20px 60px;
     text-align: center;
@@ -117,4 +137,12 @@ main section {
     padding-top: 10px;
     padding-bottom: 10px;
     /* sides are still 60px due inherance */
+}
+
+.education h3 {
+  margin-block: 0.15em;
+  margin-top: 0.8em;
+}
+.education p {  /* to reduce space between paragraphs, titles only in education */
+  margin-block: 0.15em;
 }
