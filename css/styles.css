@@ -1,12 +1,10 @@
 /* Color Palette
-# - color 1
-# - color 2
-# - color 3
-# - color 4
+# - color 1: #272343
+# - color 2: #ffffff
+# - color 3: #e3f6f5
+# - color 4: #bae8e8
 */
 
-/* Global styles 
-------------------------------------*/
 /* Online collor pallete, adquiered from https://www.shecodes.io/palettes */
 
 .first-color { 
@@ -24,6 +22,9 @@
 .fourth-color { 
 	background: #bae8e8; 
 }
+
+/* Global styles 
+------------------------------------*/
 
 .raleway-font1 {
   font-family: "Raleway", sans-serif;
@@ -48,7 +49,7 @@
   font-style: normal;
   font-size: 2em;
 }
-
+/* i wanted to use a different cursive text type for the subtiles, but not the same for the Name at the top, which is why i imported a third font for the subtitles */
 
 
 .textlight {
@@ -135,14 +136,22 @@ main section {
     /* changing color by adding another class in the index in the same section */
     
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     /* sides are still 60px due inherance */
 }
 
 .education h3 {
-  margin-block: 0.15em;
+  margin-block: 0.30em;
   margin-top: 0.8em;
 }
 .education p {  /* to reduce space between paragraphs, titles only in education */
-  margin-block: 0.15em;
+  margin-block: 0.30em;
+}
+
+.volunteer h3 {
+  margin-block: 0.30em;
+  margin-top: 0.8em;
+}
+.volunteer p {  /* to reduce space between paragraphs, titles only in volunteer */
+  margin-block: 0.30em;
 }
