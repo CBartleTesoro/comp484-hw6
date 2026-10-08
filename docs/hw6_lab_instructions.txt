@@ -14,7 +14,11 @@ In this hw, you’ll work on your resume site. I'll be providing the starting HT
 4. Pick a color pallete for your site. 
             a. Look online for a color pallete. 
             b. Copy and paste your color codes in the commented section in the styles.css file.
-            c. In your styles.css file change the background color of each header, footer, work experience, and education section.
+            c. In your styles.css file change the background color of each header, footer, work experience, and education section. 
+        <!-- I changed the color by using a class rather than in the section themselves
+        Ive realized that changing the part like header/body themselve would also apply on a new html file without having to use the class, so ive also applied it to them instead.
+        
+         -->
             d. Add classes as needed.
             e. Adjust font colors if needed
 
