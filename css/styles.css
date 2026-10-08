@@ -7,20 +7,114 @@
 
 /* Global styles 
 ------------------------------------*/
-body {
-    /*background: lightblue;*/
+/* Online collor pallete, adquiered from https://www.shecodes.io/palettes */
+
+.first-color { 
+	background: #272343; 
+}
+	
+.second-color { 
+	background: #ffffff; 
 }
 
+.third-color { 
+	background: #e3f6f5; 
+}
+
+.fourth-color { 
+	background: #bae8e8; 
+}
+
+.raleway-font1 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.inter-font2 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.textlight {
+  color: #9fd3c7;
+}
+
+html {
+    background-image: url("../images/MachuPicchu.jpg"); /*Picture from project 1, i like it */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+body {
+    background: #ececec; /* .first-color */
+    margin: 0 auto;
+    width: 70%;
+    box-sizing: border-box; 
+    /*padding: 0 20px; changed it to main section so the color sections would go side to side of the body.*/
+    font-family: "Inter", "Raleway", Verdana, Geneva, sans-serif;
+}
+
+/* End of global styles */
 
 /* Header & Footer 
 ------------------------------------*/
 
 
+header {
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
 
-/* Work Experience
+
+.profile-container { /* Profile picture styles, in order to get that round look */
+    width: 250px;
+    height: 250px;
+    flex: 0 0 250px;
+    border-radius: 50%;
+    /*background: black;*/
+    object-fit: cover;
+    overflow: hidden; /*so the parts of the image outside of the desired circle dont show*/
+    display: flex;         /*Safely centers the image inside(optional) */
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-container img { /* Profile picture inside the container */
+  width: 80%;  
+  height: 80%;
+  border-radius: 50%;
+  object-fit: cover;
+ /*The width and height at 80% are in order to change the picture size inside the container without changing the container size. Previously the image would look pixelated as it was bigger than intended. */
+}
+
+.profile-text {
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+footer {
+    padding: 20px 60px;
+    text-align: center;
+}
+
+/* Education, Projects and Volunteer work.
 ------------------------------------*/
 
+main section {
+    padding: 0 60px;
+} 
 
-
-/* Education
-------------------------------------*/
+.education, .projects, .volunteer, .reference {
+    /* changing color by adding another class in the index in the same section */
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* sides are still 60px due inherance */
+}
